@@ -1,0 +1,37 @@
+﻿@using RealEstate.Models.Resources
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>@Html.Raw(String.Format(HomeResource.AppName))</h1>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>@Html.Raw(String.Format(HomeResource.WelcomeTitle))</h2>
+        <p>@Html.Raw(String.Format(HomeResource.WelcomeMessage))</p>
+    </div>
+    <div class="col-md-4">
+        <h2>@Html.Raw(String.Format(HomeResource.TodoTitle))</h2>
+        <p>
+            @Html.Raw(String.Format(HomeResource.TodoMessage1))
+            <ul>
+                <li>Address</li>
+                <li>Bedrooms</li>
+                <li>Garage</li>
+                <li>Owner price</li>
+            </ul>
+        </p>  
+        <p>
+            @Html.Raw(String.Format(HomeResource.TodoMessage2))
+        </p>
+       
+    </div>
+    <div class="col-md-4">
+        <h2>@Html.Raw(String.Format(HomeResource.BonusTitle))</h2>
+        <p>
+            @Html.Raw(String.Format(HomeResource.BonusMessage))
+        </p>
+       
+    </div>
+</div>
